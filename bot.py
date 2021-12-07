@@ -53,7 +53,6 @@ async def start(_, message):
                     [InlineKeyboardButton("𝙔𝙤𝙪𝙏𝙪𝙗𝙚 𝘾𝙝𝙖𝙣𝙣𝙚𝙡", url="https://youtube.com/channel/UC2anvk7MNeNzJ6B4c0SZepw")]
                 ])
             )
-        )
 # mega download
 @bot.on_message(filters.regex(pattern="https://mega.nz/") & filters.private)
 async def meganz(_, message):
