@@ -47,8 +47,13 @@ async def start(_, message):
    return await message.reply_text(f"""𝗛𝗶𝗶 {user},𝗜 𝗮𝗺 𝗠𝗲𝗴𝗮 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱𝗲𝗿 𝗕𝗼𝘁.
 
 𝗣𝗹𝗲𝗮𝘀𝗲 𝘀𝗲𝗻𝗱 𝗺𝗲 𝗮𝗻𝘆 𝗺𝗲𝗴𝗮.𝗻𝘇 𝗹𝗶𝗻𝗸 𝗜 𝘄𝗶𝗹𝗹 𝗴𝗶𝘃𝗲 𝘆𝗼𝘂 𝗳𝗶𝗹𝗲.""",
-   reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("𝗨𝗽𝗱𝗮𝘁𝗲𝘀 𝗖𝗵𝗮𝗻𝗻𝗲𝗹", url="https://t.me/pyrogrammers")]]))
-
+    reply_markup=InlineKeyboardMarkup([
+                    [InlineKeyboardButton("𝙎𝙪𝙥𝙥𝙤𝙧𝙩 𝙂𝙧𝙤𝙪𝙥", url="https://t.me/+7ScFy39Vckk5MWQ1"),
+                     InlineKeyboardButton("𝙐𝙥𝙙𝙖𝙩𝙚𝙨 𝘾𝙝𝙖𝙣𝙣𝙚𝙡", url="https://t.me/pyrogrammers")],
+                    [InlineKeyboardButton("𝙔𝙤𝙪𝙏𝙪𝙗𝙚 𝘾𝙝𝙖𝙣𝙣𝙚𝙡", url="https://youtube.com/channel/UC2anvk7MNeNzJ6B4c0SZepw")]
+                ])
+            )
+        )
 # mega download
 @bot.on_message(filters.regex(pattern="https://mega.nz/") & filters.private)
 async def meganz(_, message):
