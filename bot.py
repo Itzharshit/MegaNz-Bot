@@ -60,7 +60,7 @@ async def meganz(_, message):
     except Exception as e:
         print(str(e))
         return await msg.edit("❌ 𝗢𝗼𝗽𝘀! 𝗬𝗼𝘂𝗿 𝗹𝗶𝗻𝗸 𝗶𝘀 𝗜𝗻𝘃𝗮𝗹𝗶𝗱.")
-    await msg.edit("📤 𝗨𝗽𝗹𝗼𝗮𝗱𝗶𝗻𝗴")
+    await msg.edit("📤 𝗨𝗽𝗹𝗼𝗮𝗱𝗶𝗻𝗴...")
     cap = f"✅ 𝗨𝗽𝗹𝗼𝗮𝗱𝗲𝗱 𝗕𝘆 @MegaDLPyBot"
     await bot.send_document(message.chat.id, file, caption=cap)
     await msg.delete()
