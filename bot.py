@@ -44,7 +44,7 @@ bot = Client(
 @bot.on_message(filters.command("start") & filters.private)
 async def start(_, message):
    user = message.from_user.mention
-   return await message.reply_text(f"""𝗛𝗶𝗶 {user},𝗜 𝗮𝗺 𝗠𝗲𝗴𝗮 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱𝗲𝗿 𝗕𝗼𝘁 ✨
+   return await message.reply_text(f"""𝗛𝗶𝗶 {user},𝗜 𝗮𝗺 𝗠𝗲𝗴𝗮 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱𝗲𝗿 𝗕𝗼𝘁.
 
 𝗣𝗹𝗲𝗮𝘀𝗲 𝘀𝗲𝗻𝗱 𝗺𝗲 𝗮𝗻𝘆 𝗺𝗲𝗴𝗮.𝗻𝘇 𝗹𝗶𝗻𝗸 𝗜 𝘄𝗶𝗹𝗹 𝗴𝗶𝘃𝗲 𝘆𝗼𝘂 𝗳𝗶𝗹𝗲.""",
    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("𝗨𝗽𝗱𝗮𝘁𝗲𝘀 𝗖𝗵𝗮𝗻𝗻𝗲𝗹", url="https://t.me/pyrogrammers")]]))
